@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuerza Regida - Grupo Musical</title>
+    <style>
+        /* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado con fondo degradado y texto centrado */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #e74c3c);
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            position: relative;
+            border-bottom: 10px solid #e74c3c;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 4.2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.6rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Efecto geométrico para el fondo */
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: #2c3e50;
+            clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0);
+        }
+
+        /* Sección principal */
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #e74c3c;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        /* Contenedor de imagen */
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-container img {
+            width: 90%;
+            max-width: 800px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo de lista de álbumes */
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 40px;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '•';
+            color: #e74c3c;
+            position: absolute;
+            left: 0;
+            font-size: 1.6rem;
+            top: 0;
+        }
+
+        /* Estilo de los botones de redes sociales */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .social-links a {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px;
+            font-size: 1.4rem;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .social-links a:hover {
+            background-color: #c0392b;
+            transform: scale(1.15);
+        }
+
+        /* Botón de "Ver más" */
+        .btn-ver-mas {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 14px 40px;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-ver-mas:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.1rem;
+        }
+
+        footer a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos adicionales para móvil */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            header p {
+                font-size: 1.4rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .social-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .image-container img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<body background="frz.jpg">
+    <!-- Encabezado -->
+    <header>
+        <h1>Fuerza Regida</h1>
+        <p>El poder de la música regional mexicana con un toque único</p>
+    </header>
+
+    <!-- Sección Principal -->
+    <section>
+        <h2>¿Quiénes son Fuerza Regida?</h2>
+        <p>Fuerza Regida es un grupo musical originario de San Bernardino, California, que ha logrado conquistar a la audiencia joven con su estilo fresco y original. Conocidos por mezclar los tradicionales corridos y la música regional mexicana con influencias del rap y el trap, han logrado crear un sonido único que ha capturado el corazón de miles de fans a lo largo de América Latina y los Estados Unidos.</p>
+        
+        <div class="image-container">
+             <img src="jop.jpeg" width="10" height="400"> 
+        </div>
+
+        <h2>Historia del Grupo</h2>
+        <p>Fuerza Regida nació en 2014, cuando varios músicos de San Bernardino se unieron con el propósito de crear un nuevo sonido dentro del género regional mexicano. Desde sus inicios, la banda se ha destacado por su estilo audaz y auténtico, rompiendo con las convenciones tradicionales de la música de banda. A lo largo de los años, han lanzado múltiples álbumes que han alcanzado grandes éxitos en plataformas digitales y han sido reconocidos con premios importantes en la industria musical.</p>
+
+        <h2>Discografía</h2>
+        <p>Algunos de los discos más importantes de Fuerza Regida incluyen:</p>
+        <ul>
+            <li>La Banda de Los Compas (2017)</li>
+            <li>Del Barrio Hasta Aquí (2018)</li>
+            <li>Mis Reglas (2019)</li>
+            <li>La Última Fuerza (2021)</li>
+        </ul>
+
+        <h2>Influencias y Estilo</h2>
+        <p>El estilo de Fuerza Regida es una mezcla de la música tradicional de banda y el corrido, combinado con las influencias del rap, reguetón y trap. Esto les ha permitido conectar con una audiencia joven que busca algo nuevo dentro de la música mexicana. Su lírica es a menudo cruda y directa, tocando temas de la vida en el barrio, las dificultades sociales, y las experiencias personales de los miembros de la banda.</p>
+
+        <!-- Botón de más información -->
+        <a href="https://www.fuerzaregida.com" class="btn-ver-mas" target="_blank">Ver más sobre Fuerza Regida</a>
+
+        <h2>Redes Sociales</h2>
+        <p>Sigue a Fuerza Regida en sus redes sociales para estar al tanto de todas las novedades y lanzamientos:</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/fuerzaregida/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/FuerzaRegida" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/channel/UCi_iLKnEBW7O_ZVra_GZjyg" target="_blank">YouTube</a>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Fuerza Regida | Todos los derechos reservados</p>
+        <p><a href="https://www.fuerzaregida.com">Visita nuestra página oficial</a></p>
+    </footer>
+
+</body>
+</html>

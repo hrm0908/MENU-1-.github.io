@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior H - Cantante y Compositor</title>
+    <style>
+        /* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background: url('godd.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+	    font-style: italic;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Sección Principal */
+        section {
+            background-color: #1f1f1f;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 3rem;
+            color: #e74c3c;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            color: #ddd;
+            max-width: 900px;
+            margin: 20px auto;
+            line-height: 1.8;
+        }
+
+        /* Imagen destacada */
+        .image-container {
+            margin: 50px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Botón de ver más */
+        .btn-ver-mas {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.4rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-ver-mas:hover {
+            background-color: #c0392b;
+            transform: translateY(-5px);
+        }
+
+        /* Lista de álbumes */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        ul li {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: translateY(-5px);
+        }
+
+        ul li::before {
+            content: '•';
+            color: #e74c3c;
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+
+        /* Sección de redes sociales */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .social-links a {
+            font-size: 1.8rem;
+            color: #e74c3c;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #c0392b;
+            transform: translateY(-5px);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .social-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Junior H</h1>
+        <p>El futuro del corrido tumbado, fusionando tradición y modernidad.</p>
+    </header>
+
+    <!-- Sección Principal -->
+    <section>
+        <h2>¿Quién es Junior H?</h2>
+        <p>Junior H es un cantante y compositor mexicano que ha ganado popularidad en el mundo de la música regional mexicana con su estilo único de "corrido tumbado". Nacido en Guanajuato, México, ha logrado fusionar la esencia de la música tradicional mexicana con influencias del trap y el rap, creando un sonido auténtico que ha conquistado a miles de jóvenes en todo el mundo.</p>
+
+        <div class="image-container">
+            <img src="YOY.jpg" alt="Junior H">
+        </div>
+
+        <h2>🔥Albunes con lumbre alv🔥</h2>
+        <ul>
+            <li>CONTINGENTE (2022)</li>
+            <li>Mi Vida en un cigarro 2 (2022)</li>
+            <li>Corridos tumbados (2019)</li>
+        </ul>
+
+        <h2>Estilo Musical</h2>
+        <p>Su estilo musical se caracteriza por una mezcla de corridos tradicionales y trap, lo que lo ha llevado a ser una de las voces más representativas de la nueva ola de música mexicana. A través de sus letras crudas y auténticas, Junior H logra conectar con su público, tocando temas de vida cotidiana, amor y dificultades sociales.</p>
+
+        <!-- Botón de Más Información -->
+        <a href="https://www.viagogo.com/ww/Concert-Tickets/World-Music/Junior-H-Tickets?PCID=PSROWBINHOME46846075938E7&ps=&ps=&ps_p=1&ps_c=663289155&ps_ag=1343605693888300&ps_tg=kwd-83976493522592&ps_ad=83975630602523&ps_n=o&ps_d=c&gclid=35013bdae2251a74be1c5c2c0d117b1d&msclkid=35013bdae2251a74be1c5c2c0d117b1d" class="btn-ver-mas" target="_blank">Ver más sobre Junior H</a>
+
+        <h2>Redes Sociales</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/juniorh/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/JuniorHoficial" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/channel/UC7LHG06gqJm5r9TgGvk7B5A" target="_blank">YouTube</a>
+        </div>
+    </section>
+
+</body>
+</html>
