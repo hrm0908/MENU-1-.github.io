@@ -1,37 +1,5 @@
 [quien soy.HTML](https://github.com/user-attachments/files/28677266/quien.soy.HTML)
 <html lang="es">
-<head>
-        header {
-            background-color: #3498db;
-            color: white;
-            padding: 50px 0;
-        }
-        header p {
-            font-size: 1.2em;
-        }
-        .about {
-            max-width: 700px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .about h2 {
-            font-size: 2em;
-            color: #3498db;
-        }
-        .about p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            text-align: justify;
-        }
-        footer { 
-            padding: 10px 0; 
-            margin-top: 30px;
-        }
-    </style>
-</head>
 <body>
     <header>
         <h1>¡Hola!, ¿quién soy? Soy Hugo Monroy Ramos</h1>
