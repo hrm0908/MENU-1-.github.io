@@ -1,4 +1,3 @@
-[quien soy.HTML](https://github.com/user-attachments/files/28677266/quien.soy.HTML)
 <html lang="es">
 <body>
     <header>
