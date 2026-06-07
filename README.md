@@ -1,18 +1,6 @@
 [quien soy.HTML](https://github.com/user-attachments/files/28677266/quien.soy.HTML)
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quién Soy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-            text-align: center;
-        }
         header {
             background-color: #3498db;
             color: white;
